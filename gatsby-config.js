@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `RSUP Persahabatan Landing Pendaftaran`,
     author: {
-      name: `Yinka Adedire`,
-      summary: `Self-taught front-end web dev. JAMStack.`,
+      name: `Topidesta`,
+      summary: `Fullstack Developer RSUP Persahabatan`,
     },
-    description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
-    siteUrl: `https://gatsbyglass.netlify.app`,
+    description: `Landingpage Pendaftaran RSUP Persahabatn.`,
+    siteUrl: `https://pendaftaran.rsuppersahabatan.co.id/`,
     social: {
-      twitter: `yinkakun`,
+      twitter: `rsuppersahabatan`,
+      youtube: `rsuppersahabatan`,
+      instagram: `rsuppersahabatan`
     },
     socialLinks: [
       {
@@ -85,7 +87,7 @@ module.exports = {
         modulePath: `${__dirname}/src/netlify-cms/index.js`,
         enableIdentityWidget: true,
         publicPath: 'admin',
-        htmlTitle: 'Content Manager',
+        htmlTitle: 'Landing Manager',
         includeRobots: false,
       },
     },

@@ -8,19 +8,19 @@ A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
 
 ## Features
 
-* Fully responsive
-* SEO metadata and Open Graph tags
-* Maximized lighthouse score
-* Contact form with Netlify Form
-* Edit Content with Netlify CMS
-* Easy to deploy
-* Syntax highlighting via PrismJS
+- Fully responsive
+- SEO metadata and Open Graph tags
+- Maximized lighthouse score
+- Contact form with Netlify Form
+- Edit Content with Netlify CMS
+- Easy to deploy
+- Syntax highlighting via PrismJS
 
 ## Local Install
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yinkakun/gatsby-starter-glass
+git clone https://github.com/rsuppersahabatan/landingpendaftaran
 
 # 2. Navigate into repository
 cd gatsby-starter-glass
@@ -79,8 +79,8 @@ Blog contents can be updated in markdown format at `content/blog`. Delete placeh
 ```md
 ---
 title: Hello World
-date: '2021-05-01'
-description: 'Hello World'
+date: "2021-05-01"
+description: "Hello World"
 ---
 
 This top portion is the beginning of the post and will show up as the excerpt on the homepage.
@@ -100,7 +100,7 @@ You’ll need to set up Netlify’s Identity service to authorize users to log i
 - Go to Identity and click Enable Identity.
 - Click on Invite Users and invite yourself. You will receive an email and you need to accept the invitation to set the password.
 - Now headover to Settings > Identity > Services and Enable Git Gateway.
-- You can also manage who can register and log in to your CMS. Go to Settings > Identity > Registration  Registration Preferences. I would prefer to keep it to Invite Only if I am the only one using it.
+- You can also manage who can register and log in to your CMS. Go to Settings > Identity > Registration Registration Preferences. I would prefer to keep it to Invite Only if I am the only one using it.
 - Now, go to to site-name.netlify.app/admin/, and login with your credentials.
 
 Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you will find a list of existing pages and posts.
