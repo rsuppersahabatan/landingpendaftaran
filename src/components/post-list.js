@@ -38,7 +38,6 @@ const PostListItem = ({
   slug,
 }) => {
   return (
-    console.log(tujuan),
     <StyledPostListItem>
       <Tags tags={tags} />
 

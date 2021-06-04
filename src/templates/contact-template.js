@@ -34,7 +34,6 @@ const ContactForm = () => {
   });
   const onSubmit = (data) => {
     netlify.handleSubmit(null, data);
-    console.log(data);
   };
 
   return (
