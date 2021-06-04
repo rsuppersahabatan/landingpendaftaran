@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
-import PostList from '../components/post-list';
-import StyledLink from '../components/styled-link';
-import styled from 'styled-components';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import PostList from "../components/post-list";
+import StyledLink from "../components/styled-link";
+import styled from "styled-components";
 
 const TagsTemplate = ({ pageContext, data }) => {
   const { tag } = pageContext;

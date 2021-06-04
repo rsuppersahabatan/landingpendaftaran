@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import Tags from './tags';
+import React from "react";
+import styled from "styled-components";
+import Tags from "./tags";
 
 const PostList = ({ posts }) => {
   const PostList = posts.map(({ frontmatter, fields, excerpt, timeToRead }) => {
@@ -41,9 +41,7 @@ const PostListItem = ({
     <StyledPostListItem>
       <Tags tags={tags} />
 
-      <PostListTitle>
-        {title}
-      </PostListTitle>
+      <PostListTitle>{title}</PostListTitle>
 
       <a href={tujuan} target="_blank" rel="noreferrer">
         <PostListExcerpt
@@ -58,7 +56,6 @@ const PostListItem = ({
 
         <span>{timeToRead} mins</span>
       </PostListMeta> */}
-
     </StyledPostListItem>
   );
 };
@@ -113,7 +110,7 @@ const PostListTitle = styled.h2`
   }
 
   & a::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;

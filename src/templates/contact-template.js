@@ -1,14 +1,14 @@
-import React from 'react';
-import Layout from '../components/layout';
-import { graphql } from 'gatsby';
-import { useForm } from 'react-hook-form';
+import React from "react";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import { useForm } from "react-hook-form";
 import {
   useNetlifyForm,
   NetlifyFormProvider,
   NetlifyFormComponent,
   Honeypot,
-} from 'react-netlify-forms';
-import styled from 'styled-components';
+} from "react-netlify-forms";
+import styled from "styled-components";
 
 const ContactTemplate = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
@@ -28,9 +28,9 @@ export default ContactTemplate;
 const ContactForm = () => {
   const { register, handleSubmit, errors } = useForm();
   const netlify = useNetlifyForm({
-    name: 'Contact',
-    action: '/thanks',
-    honeypotName: 'bot-field',
+    name: "Contact",
+    action: "/thanks",
+    honeypotName: "bot-field",
   });
   const onSubmit = (data) => {
     netlify.handleSubmit(null, data);
@@ -48,7 +48,7 @@ const ContactForm = () => {
               id="name"
               name="name"
               type="text"
-              ref={register({ required: 'Name is required' })}
+              ref={register({ required: "Name is required" })}
             />
             {errors.name && (
               <FormErrorMessage>{errors.name.message}</FormErrorMessage>
@@ -62,9 +62,9 @@ const ContactForm = () => {
               name="email"
               type="text"
               ref={register({
-                required: 'Email is required.',
+                required: "Email is required.",
                 pattern: {
-                  message: 'Email is not valid.',
+                  message: "Email is not valid.",
                   value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
                 },
               })}
@@ -80,7 +80,7 @@ const ContactForm = () => {
               id="message"
               name="message"
               rows="4"
-              ref={register({ required: 'Message is required' })}
+              ref={register({ required: "Message is required" })}
             />
             {errors.message && (
               <FormErrorMessage>{errors.message.message}</FormErrorMessage>

@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Layout from '../components/layout';
-import PostList from '../components/post-list';
-import styled from 'styled-components';
+import React from "react";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/layout";
+import PostList from "../components/post-list";
+import styled from "styled-components";
 
 const List = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;

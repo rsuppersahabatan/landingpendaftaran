@@ -37,6 +37,7 @@ module.exports = {
       name: `Topidesta`,
       summary: `Fullstack Developer in-mind.`,
     },
+    tujuan: ``,
     description: `A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism Ui.`,
     siteUrl: `https://pendaftaran.rsuppersahabatan.co.id`,
     social: {

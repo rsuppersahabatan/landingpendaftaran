@@ -1,7 +1,7 @@
-import React from 'react';
-import Layout from '../components/layout';
-import { Ghost } from 'react-kawaii';
-import styled from 'styled-components';
+import React from "react";
+import Layout from "../components/layout";
+import { Ghost } from "react-kawaii";
+import styled from "styled-components";
 
 const NotFoundPage = () => {
   return (

@@ -1,7 +1,7 @@
-import React from 'react';
-import Container from './container';
-import styled from 'styled-components';
-import SocialLinks from './social-links';
+import React from "react";
+import Container from "./container";
+import styled from "styled-components";
+import SocialLinks from "./social-links";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <SocialLinks />
 
         <FooterAttribution>
-          Sourcecode by{' '}
+          Sourcecode by{" "}
           <a href="https://github.com/yinkakun/gatsby--glass">Gatsby Glasses</a>
         </FooterAttribution>
       </FooterWrapper>

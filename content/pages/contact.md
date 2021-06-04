@@ -1,6 +1,6 @@
 ---
-title: 'Contact Me'
-template: 'contact-template'
+title: "Contact Me"
+template: "contact-template"
 ---
 
 # Get in Touch.
