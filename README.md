@@ -69,6 +69,7 @@ Blog contents can be updated in markdown format at `content/blog`. Delete placeh
 title: Hello World
 date: "2021-05-01"
 description: "Hello World"
+tujuan: url
 ---
 
 This top portion is the beginning of the post and will show up as the excerpt on the homepage.

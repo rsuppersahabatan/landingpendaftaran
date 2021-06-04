@@ -132,7 +132,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         name: `slug`,
         node,
-        value: `/blog${relativeFilePath}`,
+        value: `/list${relativeFilePath}`,
       });
     }
 
@@ -174,6 +174,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      tujuan: String
       template: String
       tags: [String!]
     }

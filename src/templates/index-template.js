@@ -28,9 +28,9 @@ const HomePage = ({ data }) => {
           margin-right: auto;
           width: fit-content;
         `}
-        to="/blog"
+        to="/list"
       >
-        View All posts
+        Lihat Semua List
       </StyledLink>
     </Layout>
   );
@@ -83,6 +83,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           description
           title
+          tujuan
           tags
         }
       }
@@ -91,6 +92,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tujuan
       }
     }
   }

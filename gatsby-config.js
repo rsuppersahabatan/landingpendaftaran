@@ -99,6 +99,7 @@ module.exports = {
             site {
               siteMetadata {
                 title
+                tujuan
                 description
                 siteUrl
                 site_url: siteUrl
@@ -132,6 +133,7 @@ module.exports = {
                     }
                     frontmatter {
                       title
+                      tujuan
                       date
                     }
                   }

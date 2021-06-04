@@ -9,13 +9,13 @@ const TagsTemplate = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { totalCount } = data.allMarkdownRemark;
   const posts = data.allMarkdownRemark.nodes;
-  const title = `Posts tagged ${tag}`;
+  const title = `List terkait ${tag}`;
 
   return (
     <Layout title={title}>
       <TagsTemplateWrapper>
         <Title>
-          {totalCount} posts tagged "{tag}"
+          {totalCount} list terkait "{tag}"
         </Title>
         <Link
           css={`
@@ -37,7 +37,7 @@ const TagsTemplate = ({ pageContext, data }) => {
           `}
           to="/tags"
         >
-          View All tags
+          Lihat semua Tags
         </StyledLink>
       </TagsTemplateWrapper>
     </Layout>

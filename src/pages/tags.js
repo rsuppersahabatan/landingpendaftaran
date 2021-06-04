@@ -14,7 +14,7 @@ const Tags = ({ data }) => {
 
   return (
     <Layout title="All Tags">
-      <h1>All Tags</h1>
+      <h1>Semua Tag</h1>
 
       <ul>
         {tags.map((tag) => (

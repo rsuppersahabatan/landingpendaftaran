@@ -4,13 +4,13 @@ import Layout from '../components/layout';
 import PostList from '../components/post-list';
 import styled from 'styled-components';
 
-const Blog = ({ data }) => {
+const List = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
 
   return (
-    <Layout title="Blog">
+    <Layout title="List">
       <HeaderWrapper>
-        <h1>Blog</h1>
+        <h1>List</h1>
 
         <Link
           css={`
@@ -20,7 +20,7 @@ const Blog = ({ data }) => {
           `}
           to="/tags"
         >
-          view all tags
+          Lihat Semua Tags
         </Link>
       </HeaderWrapper>
 
@@ -29,7 +29,7 @@ const Blog = ({ data }) => {
   );
 };
 
-export default Blog;
+export default List;
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -63,6 +63,7 @@ export const homePageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           description
           title
+          tujuan
           tags
         }
       }

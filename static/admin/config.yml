@@ -34,6 +34,7 @@ collections:
       - { label: 'Social Image', name: 'social_image', widget: 'image', required: false }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+      - { label: 'Tujuan', name: 'tujuan', widget: 'markdown', hint: 'Main content goes here.' }
 
   - name: "pages"
     label: "Pages"
