@@ -184,9 +184,6 @@ export const pageQuery = graphql`
         tags
         date(formatString: "MMMM DD, YYYY")
         description
-        social_image {
-          absolutePath
-        }
       }
     }
 
@@ -209,3 +206,7 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+// social_image {
+//   absolutePath
+// }

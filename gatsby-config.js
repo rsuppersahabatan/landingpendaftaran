@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `RSUP Persahabatan Landing Pendaftaran`,
+    title: `Pendaftaran RSUP Persahabatan`,
     author: {
       name: `Topidesta`,
       summary: `Fullstack Developer RSUP Persahabatan`,
@@ -8,22 +8,22 @@ module.exports = {
     description: `Landingpage Pendaftaran RSUP Persahabatn.`,
     siteUrl: `https://pendaftaran.rsuppersahabatan.co.id/`,
     social: {
-      twitter: `rsuppersahabatan`,
-      youtube: `rsuppersahabatan`,
-      instagram: `rsuppersahabatan`
+      twitter: `rs_persahabatan`,
+      youtube: `rs_persahabatan`,
+      instagram: `rs_persahabatan`
     },
     socialLinks: [
       {
-        name: 'github',
-        url: 'https://github.com',
+        name: 'youtube',
+        url: 'https://www.youtube.com/channel/UCYs6Gwc15B7dXJnqU85CVSA',
       },
       {
         name: 'twitter',
-        url: 'https://twitter.com',
+        url: 'https://twitter.com/rs_persahabatan?lang=en',
       },
       {
         name: 'instagram',
-        url: 'https://instagram.com',
+        url: 'https://www.instagram.com/rs_persahabatan/?hl=en',
       },
     ],
   },

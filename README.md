@@ -1,20 +1,8 @@
-# Gatsby Starter Glass
+# RSUP Persahabatan Landing Pendaftaran
 
-A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
+Landing Pendaftaran RSUP Persahabatan
 
-[View Live Demo](https://gatsbyglass.netlify.app)
-
-![demo site screenshot](./screenshot.png)
-
-## Features
-
-- Fully responsive
-- SEO metadata and Open Graph tags
-- Maximized lighthouse score
-- Contact form with Netlify Form
-- Edit Content with Netlify CMS
-- Easy to deploy
-- Syntax highlighting via PrismJS
+[View Live Demo](https://pendaftaran.rsuppersahabatan.co.id/)
 
 ## Local Install
 
@@ -23,7 +11,7 @@ A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
 git clone https://github.com/rsuppersahabatan/landingpendaftaran
 
 # 2. Navigate into repository
-cd gatsby-starter-glass
+cd landingpendaftaran
 
 # 3. Install the dependencies
 yarn install
@@ -44,15 +32,15 @@ Within gatsby-config.js, you can specify information about your site (metadata) 
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Glass`,
+    title: `Pendaftaran RSUP Persahabatan`,
     author: {
-      name: `Yinka Adedire`,
-      summary: `self-taught front-end dev. jamstack enthusaist.`,
+      name: `Topidesta`,
+      summary: `Fullstack Developer in-mind.`,
     },
     description: `A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism Ui.`,
-    siteUrl: `https://gatsbyglass.netlify.app`,
+    siteUrl: `https://pendaftaran.rsuppersahabatan.co.id`,
     social: {
-      twitter: `yinkakun`,
+      twitter: `rs_persahabatan`,
     },
   },
 
@@ -110,3 +98,7 @@ Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you 
 - Gatsby for Static Site Generation
 - Netlify CMS for content management
 - Styled Component for styling
+
+## Sourecode
+
+- https://github.com/yinkakun/gatsby-starter-glass

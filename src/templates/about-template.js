@@ -61,12 +61,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        profile_image {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: PNG, height: 400)
-          }
-        }
       }
     }
   }
 `;
+
+// profile_image {
+//   childImageSharp {
+//     gatsbyImageData(placeholder: BLURRED, formats: PNG, height: 400)
+//   }
+// }

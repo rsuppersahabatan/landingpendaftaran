@@ -26,9 +26,9 @@ collections:
           label: 'Date',
           name: 'date',
           widget: 'datetime',
-          date_format: 'YYYY-MM-DD',
+          date_format: 'DD-MM-YYYY',
           time_format: 'HH:mm',
-          format: 'YYYY-MM-DD HH:mm',
+          format: 'DD-MM-YYYY HH:mm',
         }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Social Image', name: 'social_image', widget: 'image', required: false }
