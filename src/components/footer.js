@@ -10,8 +10,8 @@ const Footer = () => {
         <SocialLinks />
 
         <FooterAttribution>
-          Sourcecode by{" "}
-          <a href="https://github.com/yinkakun/gatsby--glass">Gatsby Glasses</a>
+          Base On {" "}
+          <a href="https://github.com/yinkakun/gatsby-starter-glass.git">Gatsby Glass</a>
         </FooterAttribution>
       </FooterWrapper>
     </StyledFooter>

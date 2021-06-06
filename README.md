@@ -103,4 +103,4 @@ Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you 
 
 ## Sourecode
 
-- https://github.com/yinkakun/gatsby-starter-glass
+- https://github.com/yinkakun/gatsby-starter-glass.git
