@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostList from "../components/post-list";
 import styled from "styled-components";
@@ -12,11 +12,25 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout title={title}>
-      <Intro
-        dangerouslySetInnerHTML={{
-          __html: intro,
-        }}
-      />
+
+      <Link to="/" 
+        css={`
+        color: inherit;
+        background-color: rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+
+        &:focus, &:hover, &:visited, &:link, &:active {
+            text-decoration: none;
+        }
+        `}>
+    
+        <Intro
+          dangerouslySetInnerHTML={{
+            __html: intro,
+          }}
+        />
+
+      </Link>
 
       <PostList posts={posts} />
       <StyledLink
@@ -45,7 +59,7 @@ const Intro = styled.div`
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  margin-top: var(--size-800);
+  margin-top: var(--size-500);
   margin-bottom: var(--size-900);
   text-align: center;
 
@@ -60,6 +74,8 @@ const Intro = styled.div`
     }
   }
 `;
+
+
 
 export const pageQuery = graphql`
   query($slug: String!) {
