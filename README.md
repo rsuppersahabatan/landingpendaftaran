@@ -1,6 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0549ef54-5efa-487b-b98c-6adf7ce549f2/deploy-status)](https://app.netlify.com/sites/landingpendaftaran/deploys)
+
 # RSUP Persahabatan Landing Pendaftaran
 
 Landing Pendaftaran RSUP Persahabatan
+
+![demo site screenshot](./screenshoot.png)
 
 [View Live Demo](https://pendaftaran.rsuppersahabatan.co.id/)
 
