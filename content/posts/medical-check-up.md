@@ -5,7 +5,7 @@ tags:
   - Pasien Umum
   - Pasien Khusus
 tujuan: https://rsuppersahabatan.co.id/online_ipmt/index.php/halaman
-description: Link Medical Check Up
+description: Link Pendaftaran MCU
 ---
 
 [Link Pendaftaran MCU](https://www.rsuppersahabatan.co.id/online_ipmt/index.php/halaman)
