@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-profile_image: "/media/profile-image.jpg"
+profile_image: "/media/profile-image.png"
 template: "about-template"
 ---
 
