@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import StyledLink from "../components/styled-link";
 import { Link, graphql } from "gatsby";
 
 const toKebabCase = (str) => {
@@ -25,6 +26,17 @@ const Tags = ({ data }) => {
           </li>
         ))}
       </ul>
+
+      <StyledLink
+          css={`
+            margin-top: var(--size-400);
+            display: inline-block;
+          `}
+          to="/list"
+        >
+          Kembali Ke Semua Layanan
+      </StyledLink>
+
     </Layout>
   );
 };

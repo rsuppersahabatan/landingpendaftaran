@@ -15,7 +15,7 @@ const TagsTemplate = ({ pageContext, data }) => {
     <Layout title={title}>
       <TagsTemplateWrapper>
         <Title>
-          {totalCount} list terkait "{tag}"
+          {totalCount} Layanan terkait "{tag}"
         </Title>
         <Link
           css={`
@@ -26,8 +26,9 @@ const TagsTemplate = ({ pageContext, data }) => {
           `}
           to="/tags"
         >
-          view all tags
+          Lihat semua Tags
         </Link>
+
         <PostList posts={posts} />
 
         <StyledLink
@@ -72,8 +73,8 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           description
-          tags
           title
+          tujuan
         }
         timeToRead
         excerpt

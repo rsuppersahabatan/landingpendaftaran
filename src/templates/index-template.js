@@ -44,7 +44,7 @@ const HomePage = ({ data }) => {
         `}
         to="/list"
       >
-        Lihat Semua List
+        Lihat Semua Layanan
       </StyledLink>
     </Layout>
   );
@@ -100,7 +100,6 @@ export const pageQuery = graphql`
           description
           title
           tujuan
-          tags
         }
       }
     }

@@ -35,7 +35,7 @@ const PostListItem = ({
   tags,
   excerpt,
   description,
-  slug,
+  // slug,
 }) => {
   return (
     <StyledPostListItem>
@@ -98,7 +98,6 @@ const StyledPostListItem = styled.li`
 
 const PostListTitle = styled.h2`
   line-height: 1.2;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
   font-size: var(--size-600);

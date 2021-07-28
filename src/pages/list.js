@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostList from "../components/post-list";
+import StyledLink from "../components/styled-link";
 import styled from "styled-components";
 
 const List = ({ data }) => {
@@ -25,6 +26,17 @@ const List = ({ data }) => {
       </HeaderWrapper>
 
       <PostList posts={posts} />
+
+      <StyledLink
+          css={`
+            margin-top: var(--size-400);
+            display: inline-block;
+          `}
+          to="/"
+        >
+          Kembali Ke Beranda
+      </StyledLink>
+
     </Layout>
   );
 };
@@ -64,7 +76,6 @@ export const homePageQuery = graphql`
           description
           title
           tujuan
-          tags
         }
       }
     }

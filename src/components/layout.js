@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import SEO from "./seo";
+import Seo from "./seo";
 import Footer from "./footer";
 import Container from "./container";
 import GlobalStyle from "./global-styles";
@@ -9,7 +9,7 @@ const Layout = ({ children, title, tujuan, description, socialImage = "" }) => {
   return (
     <Fragment>
       <GlobalStyle />
-      <SEO
+      <Seo
         title={title}
         description={description}
         tujuan={tujuan}
