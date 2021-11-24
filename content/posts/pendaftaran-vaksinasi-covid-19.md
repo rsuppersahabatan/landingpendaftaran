@@ -1,5 +1,5 @@
 ---
-title: Pendaftaran Vaksinasi Covid 19
+title: Vaksinasi Covid 19
 date: 25-11-2021 02:43
 tags:
   - Pasien Umum
