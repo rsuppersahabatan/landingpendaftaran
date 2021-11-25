@@ -6,4 +6,4 @@ tags:
 tujuan: https://rsuppersahabatan.co.id/daftar-vaksin/
 description: Link Pendaftaran Vaksinasi Covid19
 ---
-[Link Pendaftaran Vaksinasi Covid19](https://rsuppersahabatan.co.id/daftar-vaksin/)
+[Link Vaksinasi Covid19](https://rsuppersahabatan.co.id/daftar-vaksin/)
