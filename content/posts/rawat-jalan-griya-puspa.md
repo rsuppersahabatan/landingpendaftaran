@@ -1,5 +1,5 @@
 ---
-title: Rawat Jalan Griya Puspa
+title: Griya Puspa
 date: 26-11-2021 14:21
 tags:
   - Pasien Griya Puspa
