@@ -13,7 +13,7 @@ const Footer = () => {
           Base On {" "}
           <a href="https://github.com/yinkakun/gatsby-starter-glass.git">Gatsby Glass</a> {" "}
           and Modified by {" "}
-          <a href="https://topidesta.netlify.app">SIMRS</a> {" "}
+          <a href="https://app.rsuppersahabatan.co.id/">SIMRS</a> {" "}
         </FooterAttribution>
       </FooterWrapper>
     </StyledFooter>
