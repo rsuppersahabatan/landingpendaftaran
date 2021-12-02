@@ -47,6 +47,16 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-umami`,
+      options: {
+        websiteId: 'eebd05f5-75c4-46d3-aec7-e7e4965c6294',
+        srcUrl: 'https://umamilive.vercel.app/umami.js',
+        includeInDevelopment: false,
+        autoTrack: true,
+        respectDoNotTrack: true
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
