@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-umami`,
       options: {
-        websiteId: 'eebd05f5-75c4-46d3-aec7-e7e4965c6294',
+        websiteId: 'ebbbce1a-7df7-40be-a96f-619e3d765ac5',
         srcUrl: 'https://umamilive.vercel.app/umami.js',
         includeInDevelopment: false,
         autoTrack: true,
