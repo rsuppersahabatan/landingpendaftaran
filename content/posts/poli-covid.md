@@ -2,8 +2,9 @@
 title: Poli Covid 19
 date: 03-01-2022 07:53
 tags:
-  - Pasien
-tujuan: https://rsuppersahabatan.co.id/online_ipmt/index.php/halaman
+  - VIP
+  - Umum
+tujuan: https://rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1
 description: Link Pendaftaran Poli Covid 19
 ---
-[Link Pendaftaran Poli Covid 19](https://rsuppersahabatan.co.id/online_ipmt/index.php/halaman)
+[Link Pendaftaran Poli Covid 19](https://rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1)
