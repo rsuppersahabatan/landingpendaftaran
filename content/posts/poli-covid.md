@@ -4,7 +4,7 @@ date: 03-01-2022 07:53
 tags:
   - VIP
   - Umum
-tujuan: rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1
+tujuan: http://rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1
 description: Link Pendaftaran Poli Covid 19
 ---
-[Link Pendaftaran Poli Covid 19](rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1)
+[Link Pendaftaran Poli Covid 19](http://rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1)
