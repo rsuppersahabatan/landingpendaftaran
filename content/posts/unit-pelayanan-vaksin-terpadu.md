@@ -2,7 +2,7 @@
 title: Unit Pelayanan Vaksin Terpadu
 date: 01-04-2022 11:24
 tags:
-  - OnlineVaksin
+  - UMUM
 tujuan: https://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/ayovaksin
 description: Link Pendaftaran Unit Pelayanan Vaksin Terpadu
 ---
