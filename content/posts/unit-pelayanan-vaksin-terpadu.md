@@ -1,9 +1,9 @@
 ---
-title: Unit Pelayanan Vaksin Terpadu
+title: Vaksin Non Covid
 date: 01-04-2022 11:24
 tags:
   - UMUM
 tujuan: https://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/ayovaksin
-description: Link Pendaftaran Unit Pelayanan Vaksin Terpadu
+description: Link Pendaftaran Vaksin Non Covid
 ---
-Link Pendaftaran Unit Pelayanan Vaksin Terpadu
+Link Pendaftaran Vaksin Non Covid
