@@ -8,7 +8,7 @@ import {
   NetlifyFormComponent,
   Honeypot,
 } from "react-netlify-forms";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const ContactTemplate = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
