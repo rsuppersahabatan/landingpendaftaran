@@ -5,6 +5,7 @@ tags:
   - VIP
   - UMUM
 tujuan: http://rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1
-description: Link Pendaftaran Poli Covid 19
+description: 🔗 Pendaftaran Poli Covid 19
+social_image: "../../static/media/rocket.jpg"
 ---
-[Link Pendaftaran Poli Covid 19](http://rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1)
+[🔗 Pendaftaran Poli Covid 19](http://rsuppersahabatan.co.id/online_odp/index.php/halaman/perjanjian/1)

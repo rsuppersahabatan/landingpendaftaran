@@ -4,6 +4,7 @@ date: 25-11-2021 02:43
 tags:
   - UMUM
 tujuan: http://rsuppersahabatan.co.id/daftar-vaksin/
-description: Link Pendaftaran Vaksinasi Covid19
+description: 🔗 Pendaftaran Vaksinasi Covid 19
+social_image: "../../static/media/rocket.jpg"
 ---
-[Link Vaksinasi Covid19](http://rsuppersahabatan.co.id/daftar-vaksin/)
+[🔗 Pendaftaran Vaksinasi Covid 19](http://rsuppersahabatan.co.id/daftar-vaksin/)

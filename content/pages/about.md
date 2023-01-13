@@ -1,10 +1,10 @@
 ---
 title: "About Me"
-profile_image: "/media/profile-image.png"
+profile_image: "../../static/media/profile-image.png"
 template: "about-template"
 ---
 
-# Hi, I'm John Doe
+# Assalamualaykum
 
-This website is a live example of a Gatsby Starter — it's not a real blog.
-People using this starter may want to add some information to this page about them or their business.
+Ini adalah halaman Menu Pendaftaran Online yang ada di RSUP Persahabatan. Silahkan manfaatkan dan gunakan dengan maksimal
+Landing Pendaftaran online ini dikembangkan oleh [Muchamad Desta Fadilah](https://topidesta.my.id).

@@ -4,6 +4,7 @@ date: 01-04-2022 11:24
 tags:
   - UMUM
 tujuan: https://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/ayovaksin
-description: Link Pendaftaran Vaksin Non Covid
+description: 🔗 Pendaftaran Vaksin Non Covid
+social_image: "../../static/media/rocket.jpg"
 ---
-Link Pendaftaran Vaksin Non Covid
+🔗 Pendaftaran Vaksin Non Covid

@@ -12,8 +12,8 @@ const Footer = () => {
         <FooterAttribution>
           Base On {" "}
           <a href="https://github.com/yinkakun/gatsby-starter-glass.git">Gatsby Glass</a> {" "}
-          and Modified by {" "}
-          <a href="https://app.rsuppersahabatan.co.id/">SIMRS</a> {" "}
+          and Modified with love by {" "}
+          <a href="https://topidesta.my.id/">SIMRS</a> {" "}
         </FooterAttribution>
       </FooterWrapper>
     </StyledFooter>

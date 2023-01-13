@@ -11,6 +11,8 @@ const Seo = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             tujuan
+            openGraphImage
+            siteUrl
             description
             social {
               twitter
@@ -44,6 +46,10 @@ const Seo = ({ description, lang, meta, title }) => {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: `${site.siteMetadata.siteUrl}/${site.siteMetadata.openGraphImage}`,
         },
         {
           property: `og:type`,

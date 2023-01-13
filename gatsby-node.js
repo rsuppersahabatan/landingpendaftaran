@@ -150,7 +150,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
   createTypes(`
-    type SiteSiteMetadata {
+    type SiteMetadata {
       author: Author
       siteUrl: String
       social: Social

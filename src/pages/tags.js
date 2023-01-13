@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
-import StyledLink from "../components/styled-link";
 import { Link, graphql } from "gatsby";
+import styled from "styled-components";
 
 const toKebabCase = (str) => {
   return str
@@ -15,28 +15,17 @@ const Tags = ({ data }) => {
 
   return (
     <Layout title="All Tags">
-      <h1>Semua Tag</h1>
+      <h1>All Tags</h1>
 
-      <ul>
+      <TagList>
         {tags.map((tag) => (
-          <li key={tag.fieldValue}>
+          <TagItem key={tag.fieldValue}>
             <Link to={`/tags/${toKebabCase(tag.fieldValue)}/`}>
               {tag.fieldValue} ({tag.totalCount})
             </Link>
-          </li>
+          </TagItem>
         ))}
-      </ul>
-
-      <StyledLink
-          css={`
-            margin-top: var(--size-400);
-            display: inline-block;
-          `}
-          to="/list"
-        >
-          Kembali Ke Semua Layanan
-      </StyledLink>
-
+      </TagList>
     </Layout>
   );
 };
@@ -51,5 +40,54 @@ export const pageQuery = graphql`
         totalCount
       }
     }
+  }
+`;
+
+const TagList = styled.ul`
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 60rem;
+`;
+
+const TagItem = styled.li`
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  font-size: var(--size-200);
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 4px;
+  }
+
+  body.light-mode & a {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  body.light-mode & a:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  body.dark-mode & a {
+    background-color: #212122;
+    border: 1px solid #3b3b3c;
+    opacity: 0.8;
+  }
+
+  body.light-mode & a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  body.dark-mode & a:hover {
+    background-color: #3b3b3c;
+    opacity: 1;
   }
 `;

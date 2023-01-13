@@ -4,6 +4,7 @@ date: 2021-04-01
 tags:
   - UMUM
 tujuan: http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/page_lain
-description: Link Pendaftaran Umum
+description: 🔗 Pendaftaran Poli Umum
+social_image: "../../static/media/rocket.jpg"
 ---
-[Link Pendaftaran](http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/page_lain)
+[🔗 Pendaftaran Poli Umum](http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/page_lain)
