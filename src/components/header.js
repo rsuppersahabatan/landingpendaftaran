@@ -19,17 +19,17 @@ const HEADER_NAV_ITEM = [
 ];
 
 const Header = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  );
+  // const { site } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       site {
+  //         siteMetadata {
+  //           title
+  //         }
+  //       }
+  //     }
+  //   `
+  // );
 
   return (
     <StyledHeader>
