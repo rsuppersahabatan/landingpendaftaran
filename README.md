@@ -6,6 +6,8 @@ Landing Pendaftaran RSUP Persahabatan
 
 ![demo site screenshot](./screenshoot.png)
 
+![demo site screenshot malah hari](./screenshoot2.png)
+
 [View Live Demo](https://pendaftaran.rsuppersahabatan.co.id/)
 
 ## Local Install
