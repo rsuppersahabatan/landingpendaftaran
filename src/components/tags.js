@@ -35,7 +35,6 @@ const Tag = styled.span`
   & a {
     position: relative;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     color: inherit;
     padding: 0.2rem 0.6rem;
@@ -45,5 +44,21 @@ const Tag = styled.span`
 
   & a:hover {
     background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  body.light-mode & a {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  body.light-mode & a:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  body.dark-mode & a {
+    background-color: #212122;
+    border: 1px solid #1a1a1b;
+    opacity: 0.8;
   }
 `;

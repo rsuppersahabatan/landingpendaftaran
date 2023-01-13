@@ -108,13 +108,13 @@ pre[class*="language-"] {
 .token.keyword-array,
 .token.package,
 .token.regex {
-	color: #f4adf4;
+	color: #3fa09a;
 }
 
 .token.function,
 .token.selector .token.class,
 .token.selector .token.id {
-	color: #c699e3;
+	color: #5ab0d6;
 }
 
 .token.atrule .token.rule,
@@ -164,7 +164,7 @@ pre[class*="language-"] {
 }
 
 .language-markdown .token.blockquote.punctuation {
-	color: #f4adf4;
+	color: #5ab0d6;
 }
 
 .language-markdown .token.code {
@@ -184,7 +184,7 @@ pre[class*="language-"] {
 }
 
 .language-markdown .token.list.punctuation {
-	color: #f4adf4;
+	color: #5ab0d6;
 }
 
 .language-markdown .token.table-header {
@@ -277,7 +277,7 @@ pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
 .rainbow-braces .token.punctuation.brace-level-2,
 .rainbow-braces .token.punctuation.brace-level-6,
 .rainbow-braces .token.punctuation.brace-level-10 {
-	color: #f4adf4;
+	color: #5ab0d6;
 }
 
 .rainbow-braces .token.punctuation.brace-level-3,
@@ -289,7 +289,7 @@ pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
 .rainbow-braces .token.punctuation.brace-level-4,
 .rainbow-braces .token.punctuation.brace-level-8,
 .rainbow-braces .token.punctuation.brace-level-12 {
-	color: #c699e3;
+	color: #4396d0;
 }
 
 /* overrides color-values for the Diff Highlight plugin

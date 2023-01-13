@@ -4,6 +4,7 @@ date: 26-11-2021 14:21
 tags:
   - VIP
 tujuan: http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa
-description: Link Pendaftaran Griya Puspa
+description: 🔗 Pendaftaran Griya Puspa
+social_image: "../../static/media/rocket.jpg"
 ---
-[Link Pendaftaran](http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa)
+[🔗 Pendaftaran Griya Puspa](http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa)

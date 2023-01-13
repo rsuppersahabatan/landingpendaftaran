@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Pendaftaran RSUP Persahabatan`,
+    title: `Pendaftaran Online RSUP Persahabatan`,
     author: {
       name: `Topidesta`,
-      summary: `Fullstack Developer RSUP Persahabatan`,
+      summary: `Software Engineer RSUP Persahabatan`,
     },
+    openGraphImage: `open-graph-image.png`,
     tujuan: ``,
     description: `Landingpage Pendaftaran RSUP Persahabatn.`,
     siteUrl: `https://pendaftaran.rsuppersahabatan.co.id/`,
@@ -34,20 +35,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-08ZF63G6ZV", // Google Analytics / GA
-        ],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-umami`,
       options: {
         websiteId: 'ebbbce1a-7df7-40be-a96f-619e3d765ac5',
@@ -61,6 +48,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    "gatsby-plugin-use-dark-mode",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -170,6 +158,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
+            title: `Pendaftaran Online RSUP Persahabatan`,
           },
         ],
       },

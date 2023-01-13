@@ -5,6 +5,7 @@ tags:
   - UMUM
   - VIP
 tujuan: http://rsuppersahabatan.co.id/online_ipmt/index.php/halaman/perjanjian/18
-description: Link Pendaftaran MCU
+description: 🔗 Pendaftaran MCU
+social_image: "../../static/media/rocket.jpg"
 ---
-[Link Pendaftaran MCU](http://rsuppersahabatan.co.id/online_ipmt/index.php/halaman/perjanjian/18)
+[🔗 Pendaftaran MCU](http://rsuppersahabatan.co.id/online_ipmt/index.php/halaman/perjanjian/18)
