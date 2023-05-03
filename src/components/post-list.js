@@ -44,7 +44,7 @@ const PostListItem = ({
 
       <PostListTitle>{title}</PostListTitle>
 
-      <a href={tujuan} target="_blank" rel="noreferrer" className={`umami--click--${title.replace(/ +/g, '-')}`}>
+      <a href={tujuan} target="_blank" rel="noreferrer" data-umami-event={`pendaftaran-${title.replace(/ +/g, '-')}`}>
         <PostListExcerpt
           dangerouslySetInnerHTML={{
             __html: description || excerpt,

@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-umami`,
       options: {
         websiteId: 'ebbbce1a-7df7-40be-a96f-619e3d765ac5',
-        srcUrl: 'https://umami.persahabatan.co.id/umami.js',
+        srcUrl: 'https://umami.persahabatan.co.id/script.js',
         includeInDevelopment: false,
         autoTrack: true,
         respectDoNotTrack: true
