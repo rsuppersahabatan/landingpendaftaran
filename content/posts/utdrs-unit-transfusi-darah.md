@@ -1,5 +1,5 @@
 ---
-title: UTDRS (Unit Transfusi Darah)
+title: Unit Transfusi Darah
 date: 03-07-2023 22:56
 tags:
   - UMUM
