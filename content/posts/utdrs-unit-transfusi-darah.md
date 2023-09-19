@@ -1,10 +1,10 @@
 ---
-title: Unit Transfusi Darah
+title: Donor Darah UTDRS
 date: 03-07-2023 22:56
 tags:
   - UMUM
-tujuan: https://utdrs.rsuppersahabatan.co.id/
+tujuan: https://utdrs.rsuppersahabatan.co.id/donor
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Pendaftaran UTDRS
+description: 🔗 Pendaftaran Donor Darah
 ---
-[🔗 Pendaftaran UTDRS](https://utdrs.rsuppersahabatan.co.id/)
+[🔗 Pendaftaran Donor Darah](https://utdrs.rsuppersahabatan.co.id/donor)
