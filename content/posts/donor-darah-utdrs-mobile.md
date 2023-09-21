@@ -5,6 +5,6 @@ tags:
   - UMUM
 tujuan: https://utdrs.rsuppersahabatan.co.id/mobile
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Link Pendaftaran Donor Mobile
+description: 🔗 Pendaftaran Donor Mobile
 ---
-[🔗 Link Pendaftaran Donor Mobile](https://utdrs.rsuppersahabatan.co.id/mobile)
+[🔗 Pendaftaran Donor Mobile](https://utdrs.rsuppersahabatan.co.id/mobile)
