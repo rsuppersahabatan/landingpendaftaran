@@ -5,6 +5,6 @@ tags:
   - UMUM
 tujuan: https://lowongan.rsuppersahabatan.co.id/
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Lowongan Pekerjaan
+description: 🔗 Link Lowongan Pekerjaan
 ---
-[🔗 Lowongan Pekerjaan](https://lowongan.rsuppersahabatan.co.id/)
+[🔗 Link Lowongan Pekerjaan](https://lowongan.rsuppersahabatan.co.id/)
