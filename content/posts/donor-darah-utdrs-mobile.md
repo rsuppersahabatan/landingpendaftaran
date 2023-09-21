@@ -1,10 +1,10 @@
 ---
-title: Donor Darah UTDRS - Mobile
+title: Donor Darah Mobile Unit
 date: 19-09-2023 11:59
 tags:
   - UMUM
 tujuan: https://utdrs.rsuppersahabatan.co.id/mobile
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Pendaftaran Donor Darah Mobile
+description: 🔗 Link Pendaftaran Donor Mobile
 ---
-[🔗 Pendaftaran Donor Darah Mobile](https://utdrs.rsuppersahabatan.co.id/mobile)
+[🔗 Link Pendaftaran Donor Mobile](https://utdrs.rsuppersahabatan.co.id/mobile)
