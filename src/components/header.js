@@ -7,12 +7,17 @@ import ThemeSwitch from "./theme-switch";
 
 const HEADER_NAV_ITEM = [
   {
-    label: "Website Utama",
+    label: "🏚️ Website Utama",
     url: "https://rsuppersahabatan.co.id/",
     isExternal: true,
   },
   {
-    label: "Beranda",
+    label: "📋 Daftar Layanan",
+    url: "/list",
+    isExternal: false,
+  },
+  {
+    label: "📍 Beranda",
     url: "/",
     isExternal: false,
   },

@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostList from "../components/post-list";
 import styled from "styled-components";
-import StyledLink from "../components/styled-link";
+// import StyledLink from "../components/styled-link";
 
 const HomePage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
@@ -33,7 +33,7 @@ const HomePage = ({ data }) => {
       </Link>
 
       <PostList posts={posts} />
-      <StyledLink
+      {/* <StyledLink
         css={`
           display: block;
           margin-top: var(--size-800);
@@ -45,7 +45,7 @@ const HomePage = ({ data }) => {
         to="/list"
       >
         Lihat Semua Layanan
-      </StyledLink>
+      </StyledLink> */}
     </Layout>
   );
 };
@@ -87,7 +87,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: frontmatter___date }
-      limit: 9
+      limit: 20
     ) {
       nodes {
         fields {
