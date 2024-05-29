@@ -6,7 +6,7 @@
   "author": "Topidesta",
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
-    "gatsby": "^5.13.5",
+    "gatsby": "^4.24.3",
     "gatsby-plugin-feed": "^4.24.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.24.0",
