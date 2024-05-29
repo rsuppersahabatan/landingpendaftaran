@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Pendaftaran Online RSUP Persahabatan`,
+    title: `Pendaftaran Online RS Persahabatan`,
     author: {
       name: `Topidesta`,
-      summary: `Software Engineer RSUP Persahabatan`,
+      summary: `Software Engineer RS Persahabatan`,
     },
     openGraphImage: `open-graph-image.png`,
     tujuan: ``,
-    description: `Landingpage Pendaftaran RSUP Persahabatn.`,
-    siteUrl: `https://pendaftaran.rsuppersahabatan.co.id/`,
+    description: `Landingpage Pendaftaran RS Persahabatn.`,
+    siteUrl: `https://pendaftaran.rspersahabatan.co.id/`,
     social: {
       twitter: `rs_persahabatan`,
       youtube: `rs_persahabatan`,
@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         name: "admin",
-        url: "https://pendaftaran.rsuppersahabatan.co.id/admin/",
+        url: "https://pendaftaran.rspersahabatan.co.id/admin/",
       },
     ],
   },
@@ -158,7 +158,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: `Pendaftaran Online RSUP Persahabatan`,
+            title: `Pendaftaran Online RS Persahabatan`,
           },
         ],
       },

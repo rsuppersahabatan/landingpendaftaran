@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-  repo: rsuppersahabatan/landingpendaftaran
+  repo: rspersahabatan/landingpendaftaran
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -12,9 +12,9 @@ backend:
 media_folder: "static/media"
 public_folder: "/media"
 
-logo_url: https://pendaftaran.rsuppersahabatan.co.id/favicon-32x32.png
-site_url: https://pendaftaran.rsuppersahabatan.co.id/
-display_url: https://pendaftaran.rsuppersahabatan.co.id/
+logo_url: https://pendaftaran.rspersahabatan.co.id/favicon-32x32.png
+site_url: https://pendaftaran.rspersahabatan.co.id/
+display_url: https://pendaftaran.rspersahabatan.co.id/
 
 editor:
   preview: false
