@@ -8,7 +8,7 @@ import ThemeSwitch from "./theme-switch";
 const HEADER_NAV_ITEM = [
   {
     label: "🏚️ Website Utama",
-    url: "https://rsuppersahabatan.co.id/",
+    url: "https://rspersahabatan.co.id/",
     isExternal: true,
   },
   {

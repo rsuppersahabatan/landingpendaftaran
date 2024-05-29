@@ -1,8 +1,8 @@
 ---
 template: "index-template"
-title: "Pendaftaran Online RSUP Persahabatan"
+title: "Pendaftaran Online RS Persahabatan"
 ---
 
-# RSUP PERSAHABATAN
+# RS PERSAHABATAN
 
 Pendaftaran Online Rumah Sakit Umum Pusat Persahabatan.

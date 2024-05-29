@@ -1,20 +1,20 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0549ef54-5efa-487b-b98c-6adf7ce549f2/deploy-status)](https://app.netlify.com/sites/landingpendaftaran/deploys)
 
-# RSUP Persahabatan Landing Pendaftaran
+# RS Persahabatan Landing Pendaftaran
 
-Landing Pendaftaran RSUP Persahabatan
+Landing Pendaftaran RS Persahabatan
 
 ![demo site screenshot](./screenshoot.png)
 
 ![demo site screenshot malah hari](./screenshoot2.png)
 
-[View Live Demo](https://pendaftaran.rsuppersahabatan.co.id/)
+[View Live Demo](https://pendaftaran.rspersahabatan.co.id/)
 
 ## Local Install
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/rsuppersahabatan/landingpendaftaran
+git clone https://github.com/rspersahabatan/landingpendaftaran
 
 # 2. Navigate into repository
 cd landingpendaftaran
@@ -38,14 +38,14 @@ Within gatsby-config.js, you can specify information about your site (metadata) 
 
 module.exports = {
   siteMetadata: {
-    title: `Pendaftaran RSUP Persahabatan`,
+    title: `Pendaftaran RS Persahabatan`,
     author: {
       name: `Topidesta`,
       summary: `Fullstack Developer in-mind.`,
     },
     tujuan: ``,
     description: `A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism Ui.`,
-    siteUrl: `https://pendaftaran.rsuppersahabatan.co.id`,
+    siteUrl: `https://pendaftaran.rspersahabatan.co.id`,
     social: {
       twitter: `rs_persahabatan`,
     },

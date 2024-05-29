@@ -1,7 +1,7 @@
 {
   "name": "gatsby-landing-pendaftaran",
   "private": true,
-  "description": "Pendaftaran Online RSUP Persahabatan",
+  "description": "Pendaftaran Online RS Persahabatan",
   "version": "0.1.2",
   "author": "Topidesta",
   "dependencies": {
@@ -41,16 +41,16 @@
   "devDependencies": {
     "prettier": "2.7.1"
   },
-  "homepage": "https://github.com/rsuppersahabatan/landingpendaftaran#readme",
+  "homepage": "https://github.com/rspersahabatan/landingpendaftaran#readme",
   "keywords": [
     "gatsby",
     "netlify cms",
-    "rsup persahabatan"
+    "RS persahabatan"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rsuppersahabatan/landingpendaftaran.git"
+    "url": "git+https://github.com/rspersahabatan/landingpendaftaran.git"
   },
   "scripts": {
     "build": "gatsby build",
