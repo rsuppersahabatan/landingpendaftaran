@@ -3,8 +3,8 @@ title: Griya Puspa
 date: 26-11-2021 14:21
 tags:
   - VIP
-tujuan: http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa
+tujuan: http://103.135.214.212/pendaftaran/index.php/halaman/griya_puspa
+social_image: ../../static/media/rocket.jpg
 description: 🔗 Pendaftaran Griya Puspa
-social_image: "../../static/media/rocket.jpg"
 ---
 [🔗 Pendaftaran Griya Puspa](http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa)
