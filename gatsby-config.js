@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `Pendaftaran Online RS Persahabatan`,
     author: {
-      name: `Topidesta`,
+      name: `mdestafadilah`,
       summary: `Software Engineer RS Persahabatan`,
     },
     openGraphImage: `open-graph-image.png`,
     tujuan: ``,
-    description: `Landingpage Pendaftaran RS Persahabatn.`,
+    description: `Langing Pendaftaran Online RS Persahabatn.`,
     siteUrl: `https://pendaftaran.rspersahabatan.co.id/`,
     social: {
       twitter: `rs_persahabatan`,
@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         name: "admin",
-        url: "https://pendaftaran.rspersahabatan.co.id/admin/",
+        url: "https://pendaftaran.rspersahabatan.co.id/admin",
       },
     ],
   },
@@ -37,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-umami`,
       options: {
-        websiteId: 'ebbbce1a-7df7-40be-a96f-619e3d765ac5',
-        srcUrl: 'https://umami.persahabatan.co.id/script.js',
+        websiteId: '7d787945-bb04-464c-8975-c4c9fdc4e8c3',
+        srcUrl: 'https://umami.dev.persahabatan.co.id/script.js',
         includeInDevelopment: false,
         autoTrack: true,
         respectDoNotTrack: true
