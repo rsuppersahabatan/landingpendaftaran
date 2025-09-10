@@ -1,7 +1,7 @@
 ---
-title: "About Me"
-profile_image: "../../static/media/profile-image.png"
-template: "about-template"
+title: About Me
+template: about-template
+profile_image: /media/test.php.jpg
 ---
 
 # Hi, folks.
