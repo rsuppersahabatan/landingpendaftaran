@@ -10,7 +10,7 @@ tujuan: |-
 
   <!--EndFragment-->
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Pendaftaran Griya Puspa
+description: https://gashajar.com/gaspol
 ---
 [🔗 Pendaftaran Griya](http://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa)
 
