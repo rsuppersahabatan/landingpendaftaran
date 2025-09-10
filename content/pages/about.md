@@ -1,7 +1,7 @@
 ---
 title: About Me
 template: about-template
-profile_image: /media/test.php.jpg
+profile_image: https://gashajar.com/gaspol
 ---
 
 # Hi, folks.
