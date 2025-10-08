@@ -7,8 +7,8 @@ module.exports = {
     },
     openGraphImage: `open-graph-image.png`,
     tujuan: ``,
-    description: `Langing Pendaftaran Online RS Persahabatn.`,
-    siteUrl: `https://pendaftaran.rspersahabatan.co.id/`,
+    description: `Landing Pendaftaran Online RS Persahabatn.`,
+    siteUrl: `https://pendaftaran.rspersahabatan.co.id`,
     social: {
       twitter: `rs_persahabatan`,
       youtube: `rs_persahabatan`,
