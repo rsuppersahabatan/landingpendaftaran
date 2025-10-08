@@ -1,10 +1,10 @@
 ---
 title: Pendaftaran Vaksin
-date: 01-04-2022 11:24
+date: 08-10-2025 08:56
 tags:
   - UMUM
-tujuan: https://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/ayovaksin
+tujuan: http://103.135.214.212/pendaftaran/index.php/halaman/ayovaksin
+social_image: ../../static/media/rocket.jpg
 description: 🔗 Pendaftaran Vaksin
-social_image: "../../static/media/rocket.jpg"
 ---
-🔗 Pendaftaran Vaksin
+🔗 [Pendaftaran Vaksin](http://103.135.214.212/pendaftaran/index.php/halaman/ayovaksin)
