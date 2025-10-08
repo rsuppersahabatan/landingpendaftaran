@@ -1,5 +1,5 @@
 ---
-title: POLI SORE ISDB
+title: Poli Sore ISDB
 date: 08-10-2025 13:17
 tags:
   - POLI SORE ISDB
