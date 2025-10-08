@@ -1,10 +1,10 @@
 ---
-title: Donor Darah Mobile Unit
+title: Rawat Jalan Umum
 date: 19-09-2023 11:59
 tags:
   - UMUM
-tujuan: https://utdrs.rspersahabatan.co.id/mobile
+tujuan: http://103.135.214.212/pendaftaran/index.php/halaman/page_lain
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Pendaftaran Donor Mobile
+description: 🔗 Pendaftaran Poli Umum
 ---
-[🔗 Pendaftaran Donor Mobile](https://utdrs.rspersahabatan.co.id/mobile)
+[🔗 Pendaftaran Poli Umum](http://103.135.214.212/pendaftaran/index.php/halaman/page_lain)
