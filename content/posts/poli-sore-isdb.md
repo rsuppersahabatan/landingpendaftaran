@@ -4,6 +4,6 @@ date: 08-10-2025 13:17
 tags:
   - POLI SORE ISDB
 tujuan: http://103.135.214.212/pendaftaran/index.php/halaman/poliSore
-description: 🔗 Pendaftaran Poli Umum
+description: 🔗 Pendaftaran Poli Sore ISDB
 ---
-🔗 Pendaftaran Poli Umum
+🔗 Pendaftaran Poli Sore ISDB
