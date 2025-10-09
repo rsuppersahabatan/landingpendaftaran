@@ -5,6 +5,6 @@ tags:
   - UMUM
 tujuan: https://utdrs.rspersahabatan.co.id/mobile
 social_image: ""
-description: 🔗 Pendaftaran Poli Umum
+description: 🔗 Pendaftaran Donor Mobile
 ---
 [🔗 Pendaftaran Donor Mobile](https://utdrs.rspersahabatan.co.id/mobile)
