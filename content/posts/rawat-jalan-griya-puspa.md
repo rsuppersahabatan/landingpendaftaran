@@ -1,5 +1,5 @@
 ---
-title: Griya Puspa
+title: Pendaftaran GP
 date: 26-11-2021 14:21
 tags:
   - VIP
