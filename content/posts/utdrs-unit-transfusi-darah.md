@@ -5,6 +5,6 @@ tags:
   - UMUM
 tujuan: https://utdrs.rspersahabatan.co.id/donor
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Pendaftaran Donor Darah Onsite RS Persahabatan
+description: 🔗 Pendaftaran Donor Darah
 ---
-[🔗 Pendaftaran Donor Darah Onsite RS Persahabatan](https://utdrs.rspersahabatan.co.id/donor)
+[🔗 Pendaftaran Donor Darah](https://utdrs.rspersahabatan.co.id/donor)
