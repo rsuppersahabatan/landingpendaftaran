@@ -5,6 +5,6 @@ tags:
   - UMUM
 tujuan: https://registrasi.rspersahabatan.co.id/pendaftaran/index.php/halaman/page_lain
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Pendaftaran Poli Umum
+description: 🔗 Pendaftaran Rawat Jalan Reguler
 ---
-[🔗 Pendaftaran Poli Umum](https://registrasi.rspersahabatan.co.id/pendaftaran/index.php/halaman/page_lain)
+[🔗 Pendaftaran Rawat Jalan Reguler](https://registrasi.rspersahabatan.co.id/pendaftaran/index.php/halaman/page_lain)
