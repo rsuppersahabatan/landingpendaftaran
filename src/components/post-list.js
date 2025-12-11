@@ -65,16 +65,19 @@ const StyledPostList = styled.ul`
   padding: 0;
   list-style: none;
   display: grid;
-  justify-items: center;
-  grid-gap: var(--size-600);
-  grid-template-columns: repeat(auto-fit, minmax(28ch, 1fr));
+  justify-items: stretch; /* biar item memenuhi kolom */
 
+  grid-gap: var(--size-600);
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   @media screen and (max-width: 500px) {
-    & {
-      display: block;
-    }
+    grid-template-columns: 1fr;
   }
 `;
+
 
 const StyledPostListItem = styled.li`
   display: flex;
