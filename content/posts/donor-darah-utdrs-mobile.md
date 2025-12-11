@@ -1,5 +1,5 @@
 ---
-title: Rawat Jalan Umum
+title: Rawat Jalan Reguler
 date: 19-09-2023 11:59
 tags:
   - UMUM
