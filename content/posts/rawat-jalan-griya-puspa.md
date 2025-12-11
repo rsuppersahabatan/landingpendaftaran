@@ -5,6 +5,6 @@ tags:
   - VIP
 tujuan: https://registrasi.rspersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa
 social_image: ../../static/media/rocket.jpg
-description: 🔗 Pendaftaran Griya Puspa
+description: 🔗 Pendaftaran Rawat Jalan Eksekutif Griya Puspa
 ---
-[🔗 Pendaftaran Griya Puspa](https://registrasi.rspersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa)
+[🔗 Pendaftaran Rawat Jalan Eksekutif Griya Puspa](https://registrasi.rspersahabatan.co.id/pendaftaran/index.php/halaman/griya_puspa)
