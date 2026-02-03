@@ -48,7 +48,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-use-dark-mode",
+    // "gatsby-plugin-use-dark-mode",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -99,7 +99,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-netlify-cms",
+      resolve: "gatsby-plugin-decap-cms",
       options: {
         modulePath: `${__dirname}/src/netlify-cms/index.js`,
         enableIdentityWidget: true,
