@@ -1,0 +1,69 @@
+/* Dark mode CSS variables and styles */
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #0d1117;
+  --color-text-secondary: #57606a;
+  --color-link: #0969da;
+  --color-link-hover: #0550ae;
+  --color-border: #d0d7de;
+  --color-card-bg: #f6f8fa;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --color-bg: #0d1117;
+  --color-text: #c9d1d9;
+  --color-text-secondary: #8b949e;
+  --color-link: #58a6ff;
+  --color-link-hover: #79c0ff;
+  --color-border: #30363d;
+  --color-card-bg: #161b22;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Apply theme colors to body */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--color-link);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Apply to common elements */
+.card,
+article {
+  background-color: var(--color-card-bg);
+  border-color: var(--color-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+code {
+  background-color: var(--color-card-bg);
+  transition: background-color 0.3s ease;
+}
+
+blockquote {
+  border-left-color: var(--color-border);
+  color: var(--color-text-secondary);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+hr {
+  border-color: var(--color-border);
+  transition: border-color 0.3s ease;
+}
+
+/* Shadow utility */
+.shadow {
+  box-shadow: 0 1px 3px var(--color-shadow);
+  transition: box-shadow 0.3s ease;
+}

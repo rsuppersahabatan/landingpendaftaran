@@ -30,7 +30,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-helmet": "^6.1.0",
-    "react-hook-form": "^7.37.0",
+    "react-hook-form": "^7.54.0",
     "react-kawaii": "^0.18.0",
     "react-netlify-forms": "^1.3.3",
     "react-toggle-dark-mode": "^1.1.0",

@@ -1,14 +1,15 @@
 import React from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import useDarkMode from "use-dark-mode";
+import { useTheme } from "../context/theme-context";
 import styled from "styled-components";
 
 const ThemeSwitch = () => {
-  const { toggle, value } = useDarkMode(false);
+  const { theme, toggleTheme } = useTheme();
+  const isDark = theme === "dark";
 
   return (
     <StyledThemeSwitch>
-      <DarkModeSwitch checked={value} size={20} onChange={toggle} />
+      <DarkModeSwitch checked={isDark} size={20} onChange={toggleTheme} />
     </StyledThemeSwitch>
   );
 };

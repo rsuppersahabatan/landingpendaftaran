@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import Container from "./container";
+import ThemeSwitch from "./theme-switch";
 // import { useStaticQuery, graphql } from "gatsby";
 
 const HEADER_NAV_ITEM = [
@@ -60,6 +61,9 @@ const Header = () => {
               </HeaderNavListItem>
             );
           })}
+          <HeaderNavListItem>
+            <ThemeSwitch />
+          </HeaderNavListItem>
         </HeaderNavList>
       </HeaderWrapper>
     </StyledHeader>
