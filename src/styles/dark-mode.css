@@ -1,69 +1,310 @@
 /* Dark mode CSS variables and styles */
 
 :root {
-  --color-bg: #ffffff;
-  --color-text: #0d1117;
-  --color-text-secondary: #57606a;
-  --color-link: #0969da;
-  --color-link-hover: #0550ae;
-  --color-border: #d0d7de;
-  --color-card-bg: #f6f8fa;
-  --color-shadow: rgba(0, 0, 0, 0.1);
+    /* Background colors */
+    --color-bg: #ffffff;
+    --color-bg-secondary: #f6f8fa;
+    --color-bg-tertiary: #eef2f5;
+
+    /* Text colors */
+    --color-text: #0d1117;
+    --color-text-secondary: #57606a;
+    --color-text-muted: #8b949e;
+
+    /* Link colors */
+    --color-link: #0969da;
+    --color-link-hover: #0550ae;
+
+    /* Border & divider */
+    --color-border: #d0d7de;
+    --color-border-muted: #e5e9ed;
+
+    /* Card & surface */
+    --color-card-bg: #f6f8fa;
+    --color-card-border: #d0d7de;
+
+    /* Button colors */
+    --color-btn-primary-bg: #0969da;
+    --color-btn-primary-hover: #0550ae;
+    --color-btn-primary-text: #ffffff;
+
+    /* Input colors */
+    --color-input-bg: #ffffff;
+    --color-input-border: #d0d7de;
+    --color-input-focus-border: #0969da;
+
+    /* Shadow */
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-shadow-medium: rgba(0, 0, 0, 0.15);
+    --color-shadow-large: rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="dark"] {
-  --color-bg: #0d1117;
-  --color-text: #c9d1d9;
-  --color-text-secondary: #8b949e;
-  --color-link: #58a6ff;
-  --color-link-hover: #79c0ff;
-  --color-border: #30363d;
-  --color-card-bg: #161b22;
-  --color-shadow: rgba(0, 0, 0, 0.3);
+    /* Background colors */
+    --color-bg: #0d1117;
+    --color-bg-secondary: #161b22;
+    --color-bg-tertiary: #1c2128;
+
+    /* Text colors */
+    --color-text: #c9d1d9;
+    --color-text-secondary: #8b949e;
+    --color-text-muted: #6e7681;
+
+    /* Link colors */
+    --color-link: #58a6ff;
+    --color-link-hover: #79c0ff;
+
+    /* Border & divider */
+    --color-border: #30363d;
+    --color-border-muted: #21262d;
+
+    /* Card & surface */
+    --color-card-bg: #161b22;
+    --color-card-border: #30363d;
+
+    /* Button colors */
+    --color-btn-primary-bg: #238636;
+    --color-btn-primary-hover: #2ea043;
+    --color-btn-primary-text: #ffffff;
+
+    /* Input colors */
+    --color-input-bg: #0d1117;
+    --color-input-border: #30363d;
+    --color-input-focus-border: #58a6ff;
+
+    /* Shadow */
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-shadow-medium: rgba(0, 0, 0, 0.4);
+    --color-shadow-large: rgba(0, 0, 0, 0.5);
 }
 
 /* Apply theme colors to body */
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Links */
 a {
-  color: var(--color-link);
-  transition: color 0.2s ease;
+    color: var(--color-link);
+    transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--color-link-hover);
+    color: var(--color-link-hover);
 }
 
-/* Apply to common elements */
+/* Cards & Articles */
 .card,
-article {
-  background-color: var(--color-card-bg);
-  border-color: var(--color-border);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+article,
+.post-card,
+.post-item {
+    background-color: var(--color-card-bg);
+    border-color: var(--color-card-border);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+/* Paragraphs and text */
+p {
+    color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+.text-secondary,
+.post-meta,
+.post-date,
+small {
+    color: var(--color-text-secondary);
+    transition: color 0.3s ease;
+}
+
+/* Code blocks */
 code {
-  background-color: var(--color-card-bg);
-  transition: background-color 0.3s ease;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+pre {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Blockquotes */
 blockquote {
-  border-left-color: var(--color-border);
-  color: var(--color-text-secondary);
-  transition: border-color 0.3s ease, color 0.3s ease;
+    border-left-color: var(--color-border);
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-secondary);
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Horizontal rules */
 hr {
-  border-color: var(--color-border);
-  transition: border-color 0.3s ease;
+    border-color: var(--color-border);
+    background-color: var(--color-border);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Shadow utility */
-.shadow {
-  box-shadow: 0 1px 3px var(--color-shadow);
-  transition: box-shadow 0.3s ease;
+/* Buttons */
+button,
+.btn,
+input[type="submit"],
+input[type="button"] {
+    background-color: var(--color-btn-primary-bg);
+    color: var(--color-btn-primary-text);
+    border-color: var(--color-btn-primary-bg);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: var(--color-btn-primary-hover);
+    border-color: var(--color-btn-primary-hover);
+}
+
+/* Input fields */
+input,
+textarea,
+select {
+    background-color: var(--color-input-bg);
+    color: var(--color-text);
+    border-color: var(--color-input-border);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--color-input-focus-border);
+    outline-color: var(--color-input-focus-border);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-text-muted);
+    transition: color 0.3s ease;
+}
+
+/* Tables */
+table {
+    border-color: var(--color-border);
+    transition: border-color 0.3s ease;
+}
+
+th {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text);
+    border-color: var(--color-border);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+td {
+    border-color: var(--color-border);
+    color: var(--color-text);
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+tr:hover {
+    background-color: var(--color-bg-secondary);
+    transition: background-color 0.2s ease;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--color-bg);
+    border-color: var(--color-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Header & Footer */
+header,
+footer {
+    background-color: var(--color-bg);
+    border-color: var(--color-border);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Shadow utilities */
+.shadow,
+.shadow-sm {
+    box-shadow: 0 1px 3px var(--color-shadow);
+    transition: box-shadow 0.3s ease;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px var(--color-shadow-medium);
+    transition: box-shadow 0.3s ease;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px var(--color-shadow-large);
+    transition: box-shadow 0.3s ease;
+}
+
+/* List styles */
+ul,
+ol {
+    color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+li {
+    color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+/* Images */
+img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+[data-theme="dark"] img {
+    opacity: 0.9;
+}
+
+[data-theme="dark"] img:hover {
+    opacity: 1;
+}
+
+/* Modals & Overlays */
+.modal,
+.overlay {
+    background-color: var(--color-bg);
+    border-color: var(--color-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* SVG icons */
+svg {
+    fill: var(--color-text);
+    transition: fill 0.3s ease;
+}
+
+/* Selection */
+::selection {
+    background-color: var(--color-link);
+    color: var(--color-btn-primary-text);
+}
+
+::-moz-selection {
+    background-color: var(--color-link);
+    color: var(--color-btn-primary-text);
 }
