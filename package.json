@@ -20,15 +20,15 @@
     "gatsby-remark-copy-linked-files": "^6.14.0",
     "gatsby-remark-images": "^7.14.0",
     "gatsby-remark-prismjs": "^7.14.0",
-    "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-remark-responsive-iframe": "^6.14.0",
     "gatsby-remark-smartypants": "^6.14.0",
     "gatsby-source-filesystem": "^5.14.0",
     "gatsby-transformer-remark": "^6.14.0",
     "gatsby-transformer-sharp": "^5.14.0",
+    "lodash": "^4.17.23",
     "prismjs": "^1.29.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.54.0",
     "react-kawaii": "^0.18.0",
@@ -60,6 +60,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "overrides": {
-    "graphql": "^16.12.0"
+    "graphql": "^16.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
