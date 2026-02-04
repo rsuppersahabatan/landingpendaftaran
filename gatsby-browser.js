@@ -1,9 +1,9 @@
-require("./src/components/prism-coldark-dark.css");
-require("./src/styles/dark-mode.css");
+import "./src/components/prism-coldark-dark.css";
+import "./src/styles/dark-mode.css";
 
-const React = require("react");
-const { ThemeProvider } = require("./src/context/theme-context");
+import React from "react";
+import { ThemeProvider } from "./src/context/theme-context";
 
-exports.wrapRootElement = ({ element }) => {
-    return React.createElement(ThemeProvider, null, element);
+export const wrapRootElement = ({ element }) => {
+  return <ThemeProvider>{element}</ThemeProvider>;
 };
