@@ -12,24 +12,27 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout title={title}>
-
-      <Link to="/" 
+      <Link
+        to="/"
         css={`
-        color: inherit;
-        background-color: rgba(255, 255, 255, 0.4);
-        text-decoration: none;
+          color: inherit;
+          background-color: rgba(255, 255, 255, 0.4);
+          text-decoration: none;
 
-        &:focus, &:hover, &:visited, &:link, &:active {
+          &:focus,
+          &:hover,
+          &:visited,
+          &:link,
+          &:active {
             text-decoration: none;
-        }
-        `}>
-    
+          }
+        `}
+      >
         <Intro
           dangerouslySetInnerHTML={{
             __html: intro,
           }}
         />
-
       </Link>
 
       <PostList posts={posts} />
@@ -75,10 +78,8 @@ const Intro = styled.div`
   }
 `;
 
-
-
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title

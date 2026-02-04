@@ -111,9 +111,9 @@ body {
 }
 
 body.light-mode {
-  color: #37292C;
+  color: rgb(55, 41, 44);
   background-color: white;
-  background-image: linear-gradient(315deg, #3ca870 0%, #4396d2 50%);
+  background-image: linear-gradient(315deg, rgb(60, 168, 112) 0%, rgb(67, 150, 210) 50%);
 }
 
 body.dark-mode {
