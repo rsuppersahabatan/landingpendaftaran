@@ -44,7 +44,12 @@ const PostListItem = ({
 
       <PostListTitle>{title}</PostListTitle>
 
-      <a href={tujuan} target="_blank" rel="noreferrer" data-umami-event={`pendaftaran-${title.replace(/ +/g, '-')}`}>
+      <a
+        href={tujuan}
+        target="_blank"
+        rel="noreferrer"
+        data-umami-event={`pendaftaran-${title.replace(/ +/g, "-")}`}
+      >
         <PostListExcerpt
           dangerouslySetInnerHTML={{
             __html: description || excerpt,
@@ -77,7 +82,6 @@ const StyledPostList = styled.ul`
     grid-template-columns: 1fr;
   }
 `;
-
 
 const StyledPostListItem = styled.li`
   display: flex;
@@ -112,7 +116,6 @@ const StyledPostListItem = styled.li`
     color: inherit;
     text-decoration: none;
   }
-  
 `;
 
 const PostListTitle = styled.h2`
