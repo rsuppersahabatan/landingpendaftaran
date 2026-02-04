@@ -91,10 +91,11 @@ const StyledPostListItem = styled.li`
   flex-direction: column;
   transition: all 0.3s ease-out;
 
-  body.light-mode & {
+  body.light-mode &,
+  [data-theme="light"] & {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
