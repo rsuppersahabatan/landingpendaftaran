@@ -2,16 +2,15 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import styled from "styled-components";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const AboutTemplate = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
-  const profileImage = getImage(frontmatter.profile_image);
+  const profileImage = frontmatter.profile_image;
 
   return (
     <Layout title={frontmatter.title}>
       <AboutWrapper>
-        <AboutImageWrapper image={profileImage} alt="" />
+        {profileImage && <AboutImageWrapper src={profileImage} alt="" />}
 
         <AboutCopy dangerouslySetInnerHTML={{ __html: html }} />
       </AboutWrapper>
@@ -40,11 +39,12 @@ const AboutWrapper = styled.div`
   }
 `;
 
-const AboutImageWrapper = styled(GatsbyImage)`
+const AboutImageWrapper = styled.img`
   display: block;
   border-radius: 50%;
   height: 300px;
   width: 300px;
+  object-fit: cover;
 `;
 
 const AboutCopy = styled.div`
@@ -61,11 +61,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        profile_image {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: PNG, height: 400)
-          }
-        }
+        profile_image
       }
     }
   }
