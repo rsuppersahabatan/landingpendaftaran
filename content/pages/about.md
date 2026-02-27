@@ -1,7 +1,7 @@
 ---
-title: "About Me"
-profile_image: "../../static/media/profile-image.png"
-template: "about-template"
+title: About Me
+template: about-template
+profile_image: https://avatars.githubusercontent.com/u/5575882?v=4
 ---
 
 # Hi, folks.
