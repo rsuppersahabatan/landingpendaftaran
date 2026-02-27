@@ -6,7 +6,10 @@ Landing Pendaftaran RS Persahabatan
 
 ![demo site screenshot](./screenshoot.png)
 
-![demo site screenshot malah hari](./screenshoot2.png)
+![demo site screenshot malam hari](./screenshoot2.png)
+
+![demo site screenshot new](./screenshoot3.png)
+
 
 [View Live Demo](https://pendaftaran.rspersahabatan.co.id/)
 
