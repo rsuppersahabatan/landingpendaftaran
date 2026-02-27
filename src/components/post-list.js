@@ -36,26 +36,23 @@ const PostListItem = ({
   // tags,
   excerpt,
   description,
-  // slug,
 }) => {
   return (
-    <StyledPostListItem>
+    <StyledPostListItem
+      href={tujuan}
+      target="_blank"
+      rel="noreferrer"
+      data-umami-event={`pendaftaran-${title.replace(/ +/g, "-")}`}
+    >
       {/* <Tags tags={tags} /> */}
 
       <PostListTitle>{title}</PostListTitle>
 
-      <a
-        href={tujuan}
-        target="_blank"
-        rel="noreferrer"
-        data-umami-event={`pendaftaran-${title.replace(/ +/g, "-")}`}
-      >
-        <PostListExcerpt
-          dangerouslySetInnerHTML={{
-            __html: description || excerpt,
-          }}
-        />
-      </a>
+      <PostListExcerpt
+        dangerouslySetInnerHTML={{
+          __html: description || excerpt,
+        }}
+      />
 
       {/* <PostListMeta>
         <span>{date}</span>
@@ -83,13 +80,16 @@ const StyledPostList = styled.ul`
   }
 `;
 
-const StyledPostListItem = styled.li`
+const StyledPostListItem = styled.a`
   display: flex;
   padding: 1.5rem;
   border-radius: 8px;
   position: relative;
   flex-direction: column;
   transition: all 0.3s ease-out;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 
   body.light-mode &,
   [data-theme="light"] & {
@@ -113,11 +113,6 @@ const StyledPostListItem = styled.li`
     & {
       margin-top: var(--size-600);
     }
-  }
-
-  & a {
-    color: inherit;
-    text-decoration: none;
   }
 `;
 

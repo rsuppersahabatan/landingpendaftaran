@@ -28,13 +28,13 @@ const List = ({ data }) => {
       <PostList posts={posts} />
 
       <StyledLink
-          css={`
+        css={`
             margin-top: var(--size-400);
             display: inline-block;
           `}
-          to="/"
-        >
-          Kembali Ke Beranda
+        to="/"
+      >
+        Kembali Ke Beranda
       </StyledLink>
 
     </Layout>
