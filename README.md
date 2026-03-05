@@ -4,11 +4,12 @@
 
 Landing Pendaftaran RS Persahabatan
 
-![demo site screenshot](./screenshoot.png)
 
 ![demo site screenshot malam hari](./screenshoot2.png)
 
 ![demo site screenshot new](./screenshoot3.png)
+
+![demo site screenshot admin](./screenshoot4.png)
 
 
 [View Live Demo](https://pendaftaran.rspersahabatan.co.id/)
@@ -107,7 +108,7 @@ Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you 
 ## Built with
 
 - Gatsby for Static Site Generation
-- Netlify CMS for content management
+- DecapCMS for content management
 - Styled Component for styling
 
 ## Sourecode
