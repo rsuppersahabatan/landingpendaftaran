@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import Container from "./container";
 import ThemeSwitch from "./theme-switch";
-// import { useStaticQuery, graphql } from "gatsby";
 
 const HEADER_NAV_ITEM = [
   {
@@ -17,6 +16,16 @@ const HEADER_NAV_ITEM = [
     isExternal: false,
   },
   {
+    label: "🩺 Jadwal Dokter",
+    url: "https://rspersahabatan.co.id/jadwal-dokter",
+    isExternal: true,
+  },
+  {
+    label: "ℹ️ Survey",
+    url: "https://survey.rspersahabatan.co.id",
+    isExternal: true,
+  },
+  {
     label: "📍 Beranda",
     url: "/",
     isExternal: false,
@@ -24,17 +33,6 @@ const HEADER_NAV_ITEM = [
 ];
 
 const Header = () => {
-  // const { site } = useStaticQuery(
-  //   graphql`
-  //     query {
-  //       site {
-  //         siteMetadata {
-  //           title
-  //         }
-  //       }
-  //     }
-  //   `
-  // );
 
   return (
     <StyledHeader>

@@ -16,6 +16,10 @@ module.exports = {
     },
     socialLinks: [
       {
+        name: "linkedin",
+        url: "https://www.linkedin.com/company/80777796/"
+      },
+      {
         name: "youtube",
         url: "https://www.youtube.com/channel/UCYs6Gwc15B7dXJnqU85CVSA",
       },
