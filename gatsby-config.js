@@ -7,7 +7,7 @@ module.exports = {
     },
     openGraphImage: `open-graph-image.png`,
     tujuan: ``,
-    description: `Landing Pendaftaran Online RS Persahabatn.`,
+    description: `Layanan Pendaftaran Online RS Persahabatan. Daftar poli dan rawat inap secara online, cepat, dan mudah.`,
     siteUrl: `https://pendaftaran.rspersahabatan.co.id`,
     social: {
       twitter: `rs_persahabatan`,
