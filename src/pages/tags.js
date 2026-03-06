@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 
@@ -14,7 +15,7 @@ const Tags = ({ data }) => {
   const tags = data.allMarkdownRemark.group;
 
   return (
-    <Layout title="All Tags">
+    <Layout>
       <h1>All Tags</h1>
 
       <TagList>
@@ -31,6 +32,8 @@ const Tags = ({ data }) => {
 };
 
 export default Tags;
+
+export const Head = () => <Seo title="All Tags" />;
 
 export const pageQuery = graphql`
   query {

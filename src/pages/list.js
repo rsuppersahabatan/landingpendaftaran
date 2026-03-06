@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 import PostList from "../components/post-list";
 import StyledLink from "../components/styled-link";
 import styled from "styled-components";
@@ -9,7 +10,7 @@ const List = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
 
   return (
-    <Layout title="List">
+    <Layout>
       <HeaderWrapper>
         <h1>List</h1>
 
@@ -42,6 +43,8 @@ const List = ({ data }) => {
 };
 
 export default List;
+
+export const Head = () => <Seo title="Daftar Layanan" />;
 
 const HeaderWrapper = styled.div`
   display: flex;

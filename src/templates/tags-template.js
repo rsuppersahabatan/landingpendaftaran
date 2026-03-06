@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 import PostList from "../components/post-list";
 import StyledLink from "../components/styled-link";
 import styled from "styled-components";
@@ -46,6 +47,10 @@ const TagsTemplate = ({ pageContext, data }) => {
 };
 
 export default TagsTemplate;
+
+export const Head = ({ pageContext }) => (
+  <Seo title={`List terkait ${pageContext.tag}`} />
+);
 
 const TagsTemplateWrapper = styled.div`
   padding-top: var(--size-900);

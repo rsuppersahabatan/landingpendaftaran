@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
+import Seo from "../components/seo";
 import { useForm } from "react-hook-form";
 import {
   useNetlifyForm,
@@ -24,6 +25,10 @@ const ContactTemplate = ({ data }) => {
 };
 
 export default ContactTemplate;
+
+export const Head = ({ data }) => (
+  <Seo title={data.markdownRemark.frontmatter.title} />
+);
 
 const ContactForm = () => {
   const {

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
+import Seo from "../components/seo";
 import styled from "styled-components";
 
 const AboutTemplate = ({ data }) => {
@@ -19,6 +20,10 @@ const AboutTemplate = ({ data }) => {
 };
 
 export default AboutTemplate;
+
+export const Head = ({ data }) => (
+  <Seo title={data.markdownRemark.frontmatter.title} />
+);
 
 const AboutWrapper = styled.div`
   display: flex;
