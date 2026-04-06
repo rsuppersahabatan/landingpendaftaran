@@ -171,8 +171,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Frosted Blog`,
-        short_name: `Gatsby Frosted`,
+        name: `Pendaftaran Online RS Persahabatan`,
+        short_name: `Online RS Persahabatan`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
