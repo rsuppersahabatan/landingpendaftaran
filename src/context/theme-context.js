@@ -24,6 +24,8 @@ export const ThemeProvider = ({ children }) => {
     if (mounted) {
       // Update data-theme attribute on document
       document.documentElement.setAttribute("data-theme", theme);
+      document.body.classList.remove("light-mode", "dark-mode");
+      document.body.classList.add(`${theme}-mode`);
       // Save to localStorage
       localStorage.setItem("theme", theme);
     }
